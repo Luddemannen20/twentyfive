@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kenner star wars</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -14,23 +16,38 @@
       <img src="img/Kenner_logo.svg.png" alt="" id="logo">
     </div>
   
+    <div class="menu-button">
+      <i class="material-icons">menu</i>
+    </div>
   
     <nav class="navbar">
-      <a href="/index.html">Home</a>
-      <a href="">About us</a>
-      <a href="">Contact us</a>
-      <a href="">Find us</a>
+      <a href="/index.html" class="navbarbutton">Home</a>
+      <a href="" class="navbarbutton">About us</a>
+      <a href="" class="navbarbutton">Contact us</a>
+      <a href="" class="navbarbutton">Find us</a>
     </nav>
+
+    <nav class="menu">
+      <ul>
+          <li><a href="#" class="buttoninsidemenu">Item 1</a></li>
+          <li><a href="#" class="buttoninsidemenu">Item 2</a></li>
+          <li><a href="#" class="buttoninsidemenu">Item 3</a></li>
+          <li><a href="#" class="buttoninsidemenu">Item 4</a></li>
+          <li><a href="#" class="buttoninsidemenu">Item 5</a></li>
+      </ul>
+  </nav>
+
+  <div class="fade-layer"></div>
 
 
     <div class="title">
       <h1>The Starwars vintage collection</h1>
     </div>
       
-    <div class="button">
-      <a href="#" class="btn">Watch videos</a>
-      <a href="#" class="btn">Basic skills</a>
-      <a href="#" class="btn">Learn more</a>
+    <div class="navbuttonsposition">
+      <a href="#" class="navbtn">Watch videos</a>
+      <a href="#" class="navbtn">Basic skills</a>
+      <a href="#" class="navbtn">Learn more</a>
     </div>
 
 
@@ -38,7 +55,7 @@
 
 
 
-
+<script src="js/main.js"></script>
   
 </body>
 </html>
