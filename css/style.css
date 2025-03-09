@@ -1,15 +1,12 @@
 body{
     background-color: grey;
-    background-image: url('/img/4062.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #Wrapper1{
     display: grid;
     grid-template-columns: 31% 23% 23% 1fr;
     grid-template-rows: 7% 80% 1fr;
-    height: 100vh;
+    height: 110vh;
     grid-template-areas: 
     'hd nv nv nv'
     'sc sc sc sc'
@@ -67,9 +64,17 @@ body{
 }
 
 .buttoninsidemenu{
+    border: none;
     color: black;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
+.buttoninsidemenu:hover{
+    text-decoration: underline;
+}
 
 .menu{
     height: 100vh;
@@ -122,7 +127,7 @@ body{
         margin-top: 130px;
     }
 
-    body{
+    #index{
         background-position: center;
         background-image: url('/img/premium_photo-1680497811614-4f93025d7e57.avif');
     }
@@ -131,6 +136,12 @@ body{
 @media screen and (min-width: 550px){
     .menu-button{
         display: none;
+    }
+
+    #index{
+        background-image: url('/img/4062.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -168,4 +179,26 @@ body{
 .navbtn:hover{
     background-color: #fff;
     color: #000;
+}
+
+.ft{
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    text-align: center;
+    grid-area: ft;
+    border-radius: 10px;
+}
+
+#Wrapper2{
+    display: grid;
+    grid-template-columns: 31% 23% 23% 1fr;
+    grid-template-rows: 5% 20% 40% 1fr;
+    height: 160vh;
+    grid-template-areas: 
+    'hd nv nv nv'
+    'sc1 sc1 sc1 sc1'
+    'sc2 sc2 sc2 sc2'
+    'ft ft ft ft'
+    ;
+    gap: 7px;
 }
