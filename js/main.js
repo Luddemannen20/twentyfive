@@ -1,3 +1,4 @@
+/*javascript för mobil*/
 let layer = document.querySelector(".fade-layer");
 layer.addEventListener("click", showMenu);
 
