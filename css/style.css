@@ -3,7 +3,7 @@ body{
     background-color: grey;
 }
 
-/*Kod för desktop */
+/*Kod för desktop sida 1*/
 #Wrapper1{
     display: grid;
     grid-template-columns: 25% 25% 25% 1fr;
@@ -111,7 +111,7 @@ body{
     display: block;
 }
 
-/*css för mobil*/
+/*css för mobil sida 1*/
 @media screen and (max-width: 549px){
     .navbar{
         display: none;
@@ -146,8 +146,6 @@ body{
         background-position: center;
         background-image: url('/img/premium_photo-1680497811614-4f93025d7e57.avif');
     }
-
-    /*Ny wrapper för about us*/
 }
 
 @media screen and (min-width: 550px){
@@ -162,7 +160,7 @@ body{
     }
 }
 
-/*fortsatt css till desktop*/
+/*fortsatt css till desktop sida 1*/
 .title{
     position: absolute;
     top: 46%;
@@ -206,6 +204,7 @@ body{
     border-radius: 10px;
 }
 
+/*Kos till desktop sida 2*/
 #Wrapper2{
     display: grid;
     grid-template-columns: 25% 25% 25% 1fr;
@@ -305,6 +304,7 @@ body{
     background-color: white;
     border-radius: 15px;
     padding: 20px;
+    border: solid 3px darkblue;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -342,12 +342,13 @@ body{
     margin: auto;
 }
 
+/*mobil sida 2*/
 @media screen and (max-width: 549px){
     
     #Wrapper2{
         display: grid;
         grid-template-columns: 25% 25% 25% 1fr;
-        grid-template-rows: 4% 3% 18% 3% 60% 2% 1fr;
+        grid-template-rows: 4% 3% 15% 3% 68% 2% 1fr;
         height: 300vh;
         grid-template-areas: 
         'nv nv nv nv'
@@ -376,4 +377,160 @@ body{
         background-color: rgb(63, 63, 255);
         border: solid 4px darkblue;
     }
+}
+
+/*Kod för desktop till sida 3*/
+#Wrapper3{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 1fr;
+    grid-template-rows: 3.3% 17% 17% 17% 17% 17% 1fr;
+    height: 250vh;
+    grid-template-areas: 
+    'nv nv nv nv'
+    'sc12 sc13 sc14 sc15'
+    'sc16 sc17 sc18 sc19'
+    'sc20 sc21 sc22 sc23'
+    'sc24 sc25 sc26 sc27'
+    'sc28 sc29 sc30 sc31'
+    'ft ft ft ft'
+    ;
+    gap: 9px;
+}
+
+#background-3{
+    background-color: white;
+}
+
+.resa {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1px;
+    border: solid 3px darkblue;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resa img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.resa h2 {
+    margin-top: 1px;
+    color: black;
+}
+
+.resa p {
+    color: black;
+}
+
+.resa .contact-button {
+    padding: 1px 1px;
+    margin-top: 1px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.star {
+    color: gold;
+    font-size: 1.5em;
+}
+
+.grey-star {
+    color: grey;
+    font-size: 1.5em;
+}
+
+#sc12{
+    grid-area: sc12;
+}
+
+#sc13{
+    grid-area: sc13;
+}
+
+#sc14{
+    grid-area: sc14;
+}
+
+#sc15{
+    grid-area: sc15;
+}
+
+#sc16{
+    grid-area: sc16;
+}
+
+#sc17{
+    grid-area: sc17;
+}
+
+#sc18{
+    grid-area: sc18;
+}
+
+#sc19{
+    grid-area: sc19;
+}
+
+#sc20{
+    grid-area: sc20;
+}
+
+#sc21{
+    grid-area: sc21;
+}
+
+#sc22{
+    grid-area: sc22;
+}
+
+#sc23{
+    grid-area: sc23;
+}
+
+#sc24{
+    grid-area: sc24;
+}
+
+#sc25{
+    grid-area: sc25;
+}
+
+#sc26{
+    grid-area: sc26;
+}
+
+#sc27{
+    grid-area: sc27;
+}
+
+#sc28{
+    grid-area: sc28;
+}
+
+#sc29{
+    grid-area: sc29;
+}
+
+#sc30{
+    grid-area: sc30;
+}
+
+#sc31{
+    grid-area: sc31;
 }
